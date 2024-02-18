@@ -1,0 +1,137 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&family=Ubuntu:ital@1&display=swap');
+
+*{
+
+font-family: 'Ubuntu', sans-serif;
+padding:0 ;
+margin: 0;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+body{
+
+    background-image: linear-gradient(to right,#01022d ,#000);/*ندمجو لونين مع بعض من المين لليسار*/
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    background-image: 
+    linear-gradient(to right , #01022de5 30%, #00000088) ,
+    url(https://ca-times.brightspotcdn.com/dims4/default/c1a61d9/2147483647/strip/true/crop/3840x2160+0+0/resize/1200x675!/format/webp/quality/80/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F03%2F0d%2F44d557194a8db3da6f4536cc2f30%2Favtr-226.jpg)/*ندمجو لونين مع صورة*/
+    ;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;/*باش تكون ريسبونسيف تخلي الشخصية تجي ف الوسط وبالتالي تناسب كل الاجهزة*/
+    width: 90%;
+    height: 640px;
+}
+.container:hover{
+    background-image: 
+    linear-gradient(to right , #01022de5 30%,transparent),
+    url(https://ca-times.brightspotcdn.com/dims4/default/c1a61d9/2147483647/strip/true/crop/3840x2160+0+0/resize/1200x675!/format/webp/quality/80/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F03%2F0d%2F44d557194a8db3da6f4536cc2f30%2Favtr-226.jpg)/*ندمجو لونين مع صورة*/
+    ;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo{
+    font-size: 30px;
+    text-transform: uppercase;/*يخلي الحروف كابيتل*/
+}
+ul{
+    width: 60%;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+ul a{
+    border-bottom: 2px solid transparent;
+}
+ul a:hover{
+    border-bottom-color: white;
+}
+.content{
+    color: white;
+    width: 50%;
+    margin-top: 50px;
+    padding: 30px;
+}
+.content h2{
+    font-size: 100px;
+    text-transform: uppercase;
+}
+.content p{
+    letter-spacing: 3px;
+    width: 350px;
+    padding: 20px 0;
+}
+.content button{
+    font-size: 30px;
+    padding: 6px 10px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    cursor: pointer;
+}
+.content button:hover{
+    background-color: transparent;
+    border-color: white;
+    color: white;
+}
+
+@media (max-width:600px){
+    body {
+        height: auto;
+        
+        }
+        .container{
+            background-size: auto;
+            width: 100%;
+            background-position: 60%;
+        }
+        
+.container:hover{
+    background-image: 
+     linear-gradient(to right , #01022de5 10%, #00000088) ,
+    url(https://ca-times.brightspotcdn.com/dims4/default/c1a61d9/2147483647/strip/true/crop/3840x2160+0+0/resize/1200x675!/format/webp/quality/80/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F03%2F0d%2F44d557194a8db3da6f4536cc2f30%2Favtr-226.jpg)/*ندمجو لونين مع صورة*/
+    ;}
+.content h2 {
+    font-size: 50px;
+}
+
+
+
+header{
+    display: inline-block;
+    margin: 20px 35%;
+    
+}
+ul{
+width: 30%;
+list-style: none;
+display: flex;
+margin-top: 10px;
+
+
+}
+ul li a{
+    padding: 10px;
+    
+}
+
+.content p{
+    letter-spacing: 1px;
+    width: 150px;
+    font-size: 10px;
+    
+}}
+
